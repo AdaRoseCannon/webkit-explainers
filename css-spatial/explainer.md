@@ -122,6 +122,7 @@ There are two types of spatial containers:
 - **`portal`**: Creates a *front spatial context* just like `spatial: page`,
    but also creates a *back spatial context* creating space behind the element,
   connected through a “portal” that coincides with the element's border rectangle.
+  The background of this element is an opaque single color space.
   The portal acts like a window into this infinite, independent 3D world behind the page.
   Good for product viewers, 3D scenes, and immersive content.
 
@@ -157,9 +158,7 @@ content is otherwise laid out as normal.
 ```
 
 The `.viewer` element cuts a window into its own 3D space.
-The `<figure>` element is taken out of flow and positioned within that world.
-The `<h2>` renders over the portal it is level with the web page,
-with the 3D content visible behind it.
+The `<h2>` is pushed 1cm into the portal.
 
 ### Raising Content Off the Page: Spatial Relative Positioning
 
@@ -205,9 +204,11 @@ without clipping content that would exceed it.
 }
 ```
 ```html
-<div class="card">
-    <img class="thumbnail" src="photo.jpg" alt="Photo">
-    <p>A raised card effect</p>
+<div class="tab active">
+    <div class="card">
+        <img class="thumbnail" src="photo.jpg" alt="Photo">
+        <p>A raised card effect</p>
+    </div>
 </div>
 ```
 
