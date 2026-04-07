@@ -121,9 +121,9 @@ There are two types of spatial containers:
 
 - **`portal`**: Creates a *front spatial context* just like `spatial: page`,
    but also creates a *back spatial context* creating space behind the element,
-connected through an opaque “portal” that coincides with the element's border rectangle.
+   connected through a “portal” that coincides with the element's border rectangle.
    The portal acts like a window into this infinite, independent 3D world behind the page.
-   The backdrop of this world is taken from the 'background-color' property,
+   The opaque backdrop of this world is taken from the 'background-color' property,
    and it is lit as specified by a new 'environment-map' feature.
   Good for product viewers, 3D scenes, and immersive content.
 
