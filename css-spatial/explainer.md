@@ -120,11 +120,11 @@ There are two types of spatial containers:
   </figure>
 
 - **`portal`**: Creates a *front spatial context* just like `spatial: page`,
-   but also creates a *back spatial context* creating space behind the element,
-   connected through a “portal” that coincides with the element's border rectangle.
-   The portal acts like a window into this infinite, independent 3D world behind the page.
-   The opaque backdrop of this world is taken from the 'background-color' property,
-   and it is lit as specified by a new 'environment-map' feature.
+  but also creates a *back spatial context* creating space behind the element,
+  connected through a “portal” that coincides with the element's border rectangle.
+  The portal acts like a window into this infinite, independent 3D world behind the page.
+  The opaque backdrop of this world is taken from the 'background-color' property,
+  and it is lit as specified by a new 'environment-map' feature.
   Good for product viewers, 3D scenes, and immersive content.
 
   <figure style="max-width: 200px;">
@@ -205,12 +205,14 @@ without clipping content that would exceed it.
 }
 ```
 ```html
+…
 <div class="tab active">
     <div class="card">
         <img class="thumbnail" src="photo.jpg" alt="Photo">
         <p>A raised card effect</p>
     </div>
 </div>
+…
 ```
 
 When the user hovers over the card,
