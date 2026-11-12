@@ -360,7 +360,7 @@ Defining Stage: the 'portal-stage' property</h4>
 		<img src="images/diagrams/6-stage.svg" style="max-height: 80vh; background: transparent;" alt="Dimensioned diagram of a portal stage showing 10cm horizontal, 8cm vertical, 15cm back, and 2cm front extents">
 		<figcaption>This diagram shows a portal set to <code>portal-stage: 10cm 8cm / 15cm 2cm;</code>
 		with its size in each dimension labelled.
-		The axes are coloured red (X, horizontal), green (Y, vertical) and blue (Z, depth).
+		The axes are coloured solid red (X, horizontal), double green (Y, vertical) and dashed blue (Z, depth).
 		</figcaption>
 	</figure>
 
